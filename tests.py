@@ -13,7 +13,6 @@ class TestCase(unittest.TestCase):
         response = self.app.get('/')
         self.assertEqual(200, response.status_code)
         self.assertEqual('text/html; charset=utf-8', response.content_type)
-        print(response.data)
 
 
 if __name__ == '__main__':
