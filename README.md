@@ -21,8 +21,17 @@ Requirements
 Installation
 ------
 ```bash
-$ pyenv3.5 env
+$ git clone git@github.com:RichardJTorres/flask-starter.git
+$ cd flask-starter
+$ pyvenv-3.5 env
 $ source env/bin/activate
 (env)$ pip install -r requirements.txt
+(env)$ export APP_SETTINGS="config.DevelopmentConfig"
 (env)$ python app.py
 ```
+
+Test
+------
+```bash
+$ source env/bin/activate
+(env)$ python tests.py
